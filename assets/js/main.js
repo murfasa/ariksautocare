@@ -87,9 +87,16 @@
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
-				$body.removeClass('is-preload');
+			//	$body.removeClass('is-preload');
 			}, 100);
 		});
+
+		$('#enter-overlay').click(function() {
+			$('#enter-here').fadeOut('slow');
+			$body.removeClass('is-preload');
+			$('#background-video').css('z-index', '0');
+			enableScrolling();
+		})
 
 	// Tweaks/fixes.
 
@@ -155,9 +162,9 @@
 			}
 
 	// Keyboard shortcuts.
+	function enableScrolling() {
 		if (settings.keyboardShortcuts.enabled)
 			(function() {
-
 				$wrapper
 
 					// Prevent keystrokes inside excluded elements from bubbling.
@@ -629,6 +636,7 @@
 						);
 
 			});
+	}
 
 	// Gallery.
 		$('.gallery')
@@ -755,10 +763,5 @@
 						}, 275);
 
 					});
-
-		$('#enter-overlay').click(function() {
-			$('#enter-here').hide();
-			$('#background-video').css('z-index', '0');
-		})
 
 })(jQuery);
