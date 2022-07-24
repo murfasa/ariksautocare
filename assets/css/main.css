@@ -1,4 +1,8 @@
 
+#co-widget-container {
+	z-index: 1;
+}
+
 #background-video {
 	width: 100vw;
 	height: 100vh;
@@ -11,18 +15,44 @@
 	z-index: 2;
 }
 
-#enter-here {
-	z-index: 3;
+#enter-wrapper {
 	position: fixed;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
-	font-family: 'Press Start 2P', 'Impact';
+    transform: translate(-50%, -50%);
+	z-index: 3;
 }
 
-#co-widget-container {
-	z-index: 1;
+#enter-here {
+	z-index: 3;
+	font-family: 'Press Start 2P', 'Impact';
+	font-size: 2rem;
 }
+
+.type {
+	color: rgb(255 255 255 / 80%);
+	margin: 30px auto;
+	border-right: 2px solid rgb(255 255 255 / 80%);
+	overflow: hidden;
+	white-space: nowrap;
+	animation: control-width 1s steps(28) 0s both, blink 0.5s infinite;
+  }
+  @keyframes control-width {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 100%;
+	}
+  }
+  @keyframes blink {
+	from {
+	  border-right-color: rgb(255 255 255 / 80%);
+	}
+	to {
+	  border-right-color: transparent;
+	}
+  }
 
 .glitch {
 	font-size: 2rem;
