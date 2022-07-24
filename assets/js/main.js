@@ -86,13 +86,14 @@
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
-			window.setTimeout(function() {
+			//window.setTimeout(function() {
 			//	$body.removeClass('is-preload');
-			}, 100);
+			//}, 100);
+
 		});
 
 		$('#enter-overlay').click(function() {
-			$('#enter-here').fadeOut('slow');
+			$('#enter-here').fadeOut(100);
 			$body.removeClass('is-preload');
 			$('#background-video').css('z-index', '0');
 			enableScrolling();

@@ -298,7 +298,7 @@ input, select, textarea {
 			background: #e2d3c4;
 		}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after :not(#enter-here) {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -309,7 +309,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-		body.is-preload:before {
+		body.is-preload:before :not(#enter-here) {
 			-moz-transition: opacity 1s ease;
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
@@ -3723,7 +3723,7 @@ input, select, textarea {
 			pointer-events: none;
 		}
 
-		body.is-preload #wrapper {
+		body.is-preload #wrapper :not(#enter-here) {
 			-moz-transform: translateX(2rem);
 			-webkit-transform: translateX(2rem);
 			-ms-transform: translateX(2rem);
@@ -3753,7 +3753,7 @@ input, select, textarea {
 				text-align: center;
 			}
 
-			body.is-preload #wrapper {
+			body.is-preload #wrapper :not(#enter-here) {
 				-moz-transform: translateY(1rem);
 				-webkit-transform: translateY(1rem);
 				-ms-transform: translateY(1rem);
@@ -3768,7 +3768,7 @@ input, select, textarea {
 			box-shadow: none;
 		}
 
-			body.is-preload #wrapper {
+			body.is-preload #wrapper :not(#enter-here) {
 				-moz-transform: none;
 				-webkit-transform: none;
 				-ms-transform: none;
