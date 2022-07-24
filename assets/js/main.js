@@ -641,7 +641,7 @@
 					href = $a.attr('href');
 
 				// Not an image? Bail.
-					if (!href.match(/\.(jpg|gif|png|mp4|webp)$/))
+					if (!href.match(/\.(jpg|gif|png|mp4|webP)$/))
 						return;
 
 				// Prevent default.
@@ -755,5 +755,10 @@
 						}, 275);
 
 					});
+
+		$('#enter-overlay').click(function() {
+			$('#enter-here').hide();
+			$('#background-video').css('z-index', '0');
+		})
 
 })(jQuery);
