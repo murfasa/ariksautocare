@@ -34,9 +34,9 @@
 }
 
 .type {
-	color: rgb(255 255 255 / 80%);
+	color: rgb(255 255 255 / 50%);
 	margin: 30px auto;
-	border-right: 2px solid rgb(255 255 255 / 80%);
+	border-right: 2px solid;
 	overflow: hidden;
 	white-space: nowrap;
 	animation: control-width 1s steps(28) 0s both, blink 0.5s infinite;
@@ -51,7 +51,7 @@
   }
   @keyframes blink {
 	from {
-	  border-right-color: rgb(255 255 255 / 80%);
+	  border-right-color: rgb(255 255 255 / 90%);
 	}
 	to {
 	  border-right-color: transparent;
