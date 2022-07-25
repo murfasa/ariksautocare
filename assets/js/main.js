@@ -84,6 +84,7 @@
 			//window.setTimeout(function() {
 			//	$body.removeClass('is-preload');
 			//}, 100);
+			$('#page-wrapper').hide();
 
 		});
 
@@ -91,7 +92,14 @@
 			$('#enter-here').fadeOut(100);
 			$body.removeClass('is-preload');
 			$('#background-video').css('z-index', '0');
-			enableScrolling();
+			if (!browser.mobile) {
+				$('#page-wrapper').slideDown();
+				enableScrolling();
+			} else {
+				$('#page-wrapper').fadeIn('slow');
+				$('#page-wrapper').show();
+			}
+		//	$(pageWrapper).slideToggle();
 		})
 
 	// Tweaks/fixes.
