@@ -86,7 +86,10 @@
 			//}, 100);
 			$('#page-wrapper').hide();
 
+
 		});
+
+
 
 		$('#enter-overlay').click(function() {
 			$('#enter-here').fadeOut(100);

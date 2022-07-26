@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 	<head>
 		<title>Arik's Auto Care</title>
@@ -11,109 +11,112 @@
 		<!--<script id="co-index" src="https://cdn.oncehub.com/co/widget.js" data-co-params="website_id=WEB-BDBD5F39FF" defer></script>-->
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" defer>
-		<link href="assets/css/fontawesome-all.min.css" rel="stylesheet" defer>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
 
-		<link rel="stylesheet" href="assets/css/main.css" defer/>
+		<link rel="preload" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" href="styles.css"></noscript>
+
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.onerror=null;this.integrity=null;this.crossorigin=null;this.referrerpolicy=null;this.href='assets/css/fontawesome-all.min.css';">
+		<noscript<link rel="stylesheet" href="assets/css/fontawesome-all.min.css";"></noscript>
+
+		<link rel="stylesheet" href="assets/css/main.css"/>
 
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
 
-
-		<div id="enter-overlay">
-			<div id="enter-wrapper"><h1 id="enter-here" class="type">click to view</h1></div>
-
+	<div id="enter-overlay">
+		<div id="enter-wrapper"><h1 id="enter-here" class="type">click to view</h1></div>
 		<!--<video id="background-video" playsinline autoplay loop muted controls poster="images/bg3.gif">
 			<source src="images/bg3.webm" type="video/webm">
 		</video>-->
-		<img src="images/driving.webp" id="background-video">
+		<img src="images/driving.webp" id="background-video" alt="">
+	</div>
+
+	<body class="is-preload">
 		<!-- Page Wrapper -->
+		<div id="page-wrapper">
+			<!-- Wrapper -->
+				<div id="wrapper">
+					<!-- Banner -->
+						<section class="panel banner right">
+							<div class="content color0 span-3">
+								<h1 class="major">Professional Auto Detailing</h1>
+								<p>Looking for a auto detailing service in East Elmhurst, Queens that will take care of your premium vehicle?<br />
+									Let us help you protect your investment!
+								</p>
+								<ul class="actions">
+									<li><a href="#book" class="button primary color1 circle icon solid fa-angle-right">Contact</a></li>
+								</ul>
+							</div>
+							<div class="image span-2-75" data-position="center">
+								<a href="#"><img src="images/logo.webP" alt="Arik's Auto Care Logo"/></a>
+							</div>
+						</section>
+
+					<!-- Stay Connected Panel -->
+						<section class="panel color1">
+							<div class="intro joined">
+								<h2 class="major">Stay Connected</h2>
+								<p>Follow the Instagram for the latest projects, news, and tips to keep your vehicle looking great!</p>
+							</div>
+							<div class="inner">
+								<ul class="grid-icons">
+									<li><a href="https://www.instagram.com/ariksautocare/?hl=en"><span class="icon solid fa-camera-retro"><span class="label">Instagram</span></span><br \>@ariksautocare</a></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Gallery Panel -->
+						<section class="panel" id="gallery">
+							<div class="intro color2 span-1-25">
+								<h2 class="major">Gallery</h2>
+							</div>
+							<div class="gallery">
+								<div class="group span-3">
+									<a href="images/gallery/full/skylinebmw.webP" class="image filtered span-3" data-position="center"><img src="images/gallery/thumbs/skylinebmw.webP" alt="BMW in front of NYC Skyline" /></a>
+									<a href="images/gallery/full/bmwrim.webP" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/bmwrim.webP" alt="BMW's clean rim" /></a>
+									<a href="images/gallery/full/bmwinterior.webP" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/bmwinterior.webP" alt="BMW's clean interior" /></a>
+								</div>
+								<a href="images/gallery/full/monte.webP" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/monte.webP" alt="Very clean sparkling blue Monte Carlo" /></a>
+								<div class="group span-4-5">
+									<a href="images/gallery/full/benzback.webP" class="image filtered span-3" data-position="center"><img src="images/gallery/thumbs/benzback.webP" alt="Clean white Mercedes-Benz rear" /></a>
+									<a href="images/gallery/full/benzsuds.webP" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/benzsuds.webP" alt="White Mercedes-Benz covered in soap suds" /></a>
+									<a href="images/gallery/full/benz.webP" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/benz.webP" alt="Beautiful white Mercedes-Benz" /></a>
+									<a href="images/gallery/full/benzinterior.webP" class="image filtered span-3" data-position="center"><img src="images/gallery/thumbs/benzinterior.webP" alt="Sharp  Mercedes-Benz interior" /></a>
+								</div>
+								<a href="images/gallery/full/lambo.webP" class="image filtered span-2-5" data-position="center"><img src="images/gallery/thumbs/lambo.webP" alt="Clean red Lamborghini Urus" /></a>
+							</div>
+						</section>
+
+					<!-- Booking Panel -->
+						<section class="panel color4" id="book">
+							<div class="intro color4">
+								<h2 class="major">Book Today</h2>
+								<p>Schedule an appointment through the portal and we will get in contact with you prior to the appointment!</p>
+							</div>
+							<div class="inner">
+								<div class="span-3-25">
+									<!-- ScheduleOnce embed START -->
+									<div id="SOIDIV_murfasatest" data-so-page="murfasatest" data-height="350" data-style="border: 0px solid #d8d8d8; min-width: 290px; max-width: 900px;" data-psz="00"></div>
+									<script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js" defer></script>
+									<!-- ScheduleOnce embed END -->
+									</form>
+								</div>
+							</div>
+						</section>
+
+					<!-- Copyright -->
+						<div class="copyright">&copy; Ariks Auto Care. Created by <a href="https://murfasa.com">murfasa</a> using <a href="https://html5up.net">HTML5UP</a>.</div>
+
+				</div>
+
 		</div>
-			<div id="page-wrapper">
-				<!-- Wrapper -->
-					<div id="wrapper">
-						<!-- Banner -->
-							<section class="panel banner right">
-								<div class="content color0 span-3">
-									<h1 class="major">Professional Auto Detailing</h1>
-									<p>Looking for a auto detailing service in East Elmhurst, Queens that will take care of your premium vehicle?<br />
-										Let us help you protect your investment!
-									</p>
-									<ul class="actions">
-										<li><a href="#book" class="button primary color1 circle icon solid fa-angle-right">Contact</a></li>
-									</ul>
-								</div>
-								<div class="image span-2-75" data-position="center">
-									<a href="#"><img src="images/logo.webP" alt=""/></a>
-								</div>
-							</section>
-
-						<!-- Stay Connected Panel -->
-							<section class="panel color1">
-								<div class="intro joined">
-									<h2 class="major">Stay Connected</h2>
-									<p>Follow the Instagram for the latest projects, news, and tips to keep your vehicle looking great!</p>
-								</div>
-								<div class="inner">
-									<ul class="grid-icons">
-										<li><a href="https://www.instagram.com/ariksautocare/?hl=en"><span class="icon solid fa-camera-retro"><span class="label">Instagram</span></span><br \>@ariksautocare</a></li>
-									</ul>
-								</div>
-							</section>
-
-						<!-- Gallery Panel -->
-							<section class="panel" id="gallery">
-								<div class="intro color2 span-1-25">
-									<h2 class="major">Gallery</h2>
-								</div>
-								<div class="gallery">
-									<div class="group span-3">
-										<a href="images/gallery/full/skylinebmw.webP" class="image filtered span-3" data-position="center"><img src="images/gallery/full/skylinebmw.webP" alt="" /></a>
-										<a href="images/gallery/full/bmwrim.webP" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/full/bmwrim.webP" alt="" /></a>
-										<a href="images/gallery/full/bmwinterior.webP" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/full/bmwinterior.webP" alt="" /></a>
-									</div>
-									<a href="images/gallery/full/monte.webP" class="image filtered span-2-5" data-position="top"><img src="images/gallery/full/monte.webP" alt="" /></a>
-									<div class="group span-4-5">
-										<a href="images/gallery/full/benzback.webP" class="image filtered span-3" data-position="center"><img src="images/gallery/full/benzback.webP" alt="" /></a>
-										<a href="images/gallery/full/benzsuds.webP" class="image filtered span-1-5" data-position="center"><img src="images/gallery/full/benzsuds.webP" alt="" /></a>
-										<a href="images/gallery/full/benz.webP" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/full/benz.webP" alt="" /></a>
-										<a href="images/gallery/full/benzinterior.webP" class="image filtered span-3" data-position="center"><img src="images/gallery/full/benzinterior.webP" alt="" /></a>
-									</div>
-									<a href="images/gallery/full/lambo.webP" class="image filtered span-2-5" data-position="center"><img src="images/gallery/full/lambo.webP" alt="" /></a>
-								</div>
-							</section>
-
-						<!-- Booking Panel -->
-							<section class="panel color4" id="book">
-								<div class="intro color4">
-									<h2 class="major">Book Today</h2>
-									<p>Schedule an appointment through the portal and we will get in contact with you prior to the appointment!</p>
-								</div>
-								<div class="inner">
-									<div class="span-3-25">
-										<!-- ScheduleOnce embed START -->
-										<div id="SOIDIV_murfasatest" data-so-page="murfasatest" data-height="350" data-style="border: 0px solid #d8d8d8; min-width: 290px; max-width: 900px;" data-psz="00"></div>
-										<script type="text/javascript" src="https://cdn.oncehub.com/mergedjs/so.js" defer></script>
-										<!-- ScheduleOnce embed END -->
-										</form>
-									</div>
-								</div>
-							</section>
-
-						<!-- Copyright -->
-							<div class="copyright">&copy; Ariks Auto Care. Created by <a href="https://murfasa.com">murfasa</a> using <a href="https://html5up.net">HTML5UP</a>.</div>
-
-					</div>
-
-			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer onerror="alert('Google jQuery CDN Failure!');"></script>
+			<script src="assets/js/browser.min.js" defer></script>
+			<script src="assets/js/breakpoints.min.js" defer></script>
+			<script src="assets/js/main.js" defer></script>
 
 	</body>
 </html>
