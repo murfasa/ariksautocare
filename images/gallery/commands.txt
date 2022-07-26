@@ -1,0 +1,13 @@
+strip photos and reduce quality to 80% and convert to webp:
+
+    mogrify -format webP -path full/ -strip -quality 80% -define webp:lossless=false from/path/*.*
+
+    mogrify -format webP -path full/3 -strip -quality 80% -define webp:lossless=false orig/3/*.*
+
+generate thumbnails
+
+    mogrify -format webP -path thumbs/ -thumbnail 40% full/*.webP
+
+    mogrify -format webP -path thumbs/1 -thumbnail 40% full/1/*.webP
+    mogrify -format webP -path thumbs/2 -thumbnail 40% full/2/*.webP
+    mogrify -format webP -path thumbs/3 -thumbnail 40% full/3/*.webP
