@@ -94,7 +94,7 @@
 			$body.removeClass('is-preload');
 			$('#background-video').css('z-index', '0');
 			if (!browser.mobile) {
-				$('#page-wrapper').slideDown();
+				$('#page-wrapper').slideDown(1000);
 				enableScrolling();
 			} else {
 				$('#page-wrapper').fadeIn('slow');
