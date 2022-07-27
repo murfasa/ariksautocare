@@ -84,26 +84,24 @@
 			//window.setTimeout(function() {
 			//	$body.removeClass('is-preload');
 			//}, 100);
-			$('#page-wrapper').hide();
 
-			$('#enter-overlay').click(function() {
-				$('#enter-here').fadeOut(100);
-				$body.removeClass('is-preload');
-				$('#background-video').css('z-index', '0');
-				if (!browser.mobile) {
-					$('#page-wrapper').slideDown();
-					enableScrolling();
-				} else {
-					$('#page-wrapper').fadeIn('slow');
-					$('#page-wrapper').show();
-				}
-			//	$(pageWrapper).slideToggle();
-			})
 		});
 
+		$('#page-wrapper').hide();
 
-
-
+		$('#enter-overlay').click(function() {
+			$('#enter-here').fadeOut(100);
+			$body.removeClass('is-preload');
+			$('#background-video').css('z-index', '0');
+			if (!browser.mobile) {
+				$('#page-wrapper').slideDown();
+				enableScrolling();
+			} else {
+				$('#page-wrapper').fadeIn('slow');
+				$('#page-wrapper').show();
+			}
+		//	$(pageWrapper).slideToggle();
+		})
 
 	// Tweaks/fixes.
 
